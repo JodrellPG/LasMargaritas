@@ -1,0 +1,49 @@
+/* 
+    Estas son las variables con los colores y fuente que se usaran.
+
+    Se usan tipo asi: 
+
+    font-family: var(--fuente);
+    background-color: var(--azul);
+*/
+:root{
+    --fuente: 'Poppins', sans-serif;
+    --MarianBlue: #0C3D91;
+    --White: #FFFFFF;
+    --KellyGreen: #50A120;
+    --ChefchaousenBlue: #3F8EFC;
+    --Black: #000500;
+}
+
+/* 
+Quitando los margenes que tenga la pagina por defecto.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+}
+
+html{
+    font-size: 62.5%; /*Eso es para poder utilizar los rem en el codigo css, es mejor que pixeles: 1rem = 10px*/
+    box-sizing: border-box; /*Sirve para que el tamaño de una imagen se quede fija y no se agregue el tamaño de un padding, o no se llegue a agregar*/
+}
+
+*,*:before, *:after{ /*Tambien tiene que ver con lo del tamaño de la imagen*/
+    box-sizing: inherit;
+}
+li{
+    list-style: none;
+}
+a{
+    color: var(--Black);
+    text-decoration: none;
+}
+
+/* AQUI VA CODIGO DEL HEADER */
+
+/* AQUI VA CODIGO DEL MAIN */
+
+
+/* AQUI VA CODIGO DEL FOOTER */
+
