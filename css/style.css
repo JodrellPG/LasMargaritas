@@ -41,7 +41,39 @@ a{
 }
 
 /* AQUI VA CODIGO DEL HEADER */
-
+.navegador--contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navegador--botones{
+    display: flex;
+    column-gap: 2rem;
+    font-size: 1.4rem;
+}
+.logo img{
+    width: 25rem;
+}
+.donate--bottom a{
+    background-color: var(--ChefchaousenBlue);
+    padding: 1.5rem 2rem;
+    color: var(--White);
+    transition: 300ms ease-in-out;
+    border-radius: 1rem;
+}
+.donate--bottom a:hover{
+    background-color:#3f8efccb;
+}
+.navegador--boton a{
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid transparent;
+    transition: 400ms ease;
+}
+.navegador--boton a:hover{
+    color: var(--ChefchaousenBlue);
+    padding-bottom: 0;
+    border-bottom: 0.2rem solid var(--ChefchaousenBlue);
+}
 /* AQUI VA CODIGO DEL MAIN */
 
 
