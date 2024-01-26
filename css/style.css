@@ -51,7 +51,15 @@ a{
     column-gap: 2rem;
     font-size: 1.4rem;
 }
-.logo img{
+.imagenes{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 5rem;
+}
+.letras{
+    margin-top: 1rem;
     width: 25rem;
 }
 .donate--bottom a{
