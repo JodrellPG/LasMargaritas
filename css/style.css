@@ -39,12 +39,15 @@ a{
     color: var(--Black);
     text-decoration: none;
 }
-
+.contenedor{
+    margin: 0 20rem;
+}
 /* AQUI VA CODIGO DEL HEADER */
 .navegador--contenedor{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 2rem 0;
 }
 .navegador--botones{
     display: flex;
@@ -63,24 +66,97 @@ a{
     width: 25rem;
 }
 .donate--bottom a{
-    background-color: var(--ChefchaousenBlue);
-    padding: 1.5rem 2rem;
-    color: var(--White);
+    border: 0.1rem solid var(--ChefchaousenBlue);
+    padding: 1rem 1.5rem;
     transition: 300ms ease-in-out;
     border-radius: 1rem;
+    color: var(--ChefchaousenBlue);
+    font-weight: bold;
 }
 .donate--bottom a:hover{
-    background-color:#3f8efccb;
+    color: var(--White);
+    background-color:var(--ChefchaousenBlue);
 }
 .navegador--boton a{
     padding-bottom: 2rem;
-    border-bottom: 0.2rem solid transparent;
+    border-bottom: 0.1rem solid transparent;
     transition: 400ms ease;
 }
 .navegador--boton a:hover{
     color: var(--ChefchaousenBlue);
     padding-bottom: 0;
-    border-bottom: 0.2rem solid var(--ChefchaousenBlue);
+    border-bottom: 0.1rem solid var(--ChefchaousenBlue);
+}
+.donate--anunce{
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 100vh;
+}
+.donate--text--con{
+    margin: 0 20rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--White);
+}
+
+.donate--anunce--con{
+    background-image: url(../img/header-foto.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.donate--text--con h3{
+    text-align: center;
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+.donate--text--con p{
+    font-size: 1.5rem;
+}
+.donate--text--con a{
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--ChefchaousenBlue);
+    border: 0.1rem solid var(--ChefchaousenBlue);
+    padding: 1rem 1.5rem;
+    transition: 300ms ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+.donate--text--con a i{
+    font-size: 2rem;
+    padding: 0 0 0 1rem;
+}
+.donate--text--con a:hover{
+    color: var(--White);
+}
+.donate--text--con a::after {
+    content: "";
+    background:var(--ChefchaousenBlue);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.donate--text--con a:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
 }
 /* AQUI VA CODIGO DEL MAIN */
 
