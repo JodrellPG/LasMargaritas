@@ -39,6 +39,10 @@ a{
     color: var(--Black);
     text-decoration: none;
 }
+button{
+    background-color: transparent;
+    border: none;
+}
 .contenedor{
     margin: 0 20rem;
 }
@@ -47,9 +51,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
 }
-.navegador--botones{
+.navegador--botones ul{
     display: flex;
     column-gap: 2rem;
     font-size: 1.4rem;
@@ -87,6 +91,10 @@ a{
     padding-bottom: 0;
     border-bottom: 0.1rem solid var(--ChefchaousenBlue);
 }
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
 .donate--anunce{
     background-color: rgba(0, 0, 0, 0.705);
     height: 100vh;
@@ -115,6 +123,7 @@ a{
 }
 .donate--text--con p{
     font-size: 1.5rem;
+    text-align: center;
 }
 .donate--text--con a{
     margin-top: 6rem;
@@ -158,8 +167,151 @@ a{
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
 }
+
 /* AQUI VA CODIGO DEL MAIN */
 
 
 /* AQUI VA CODIGO DEL FOOTER */
 
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 996px) {
+    .navegador--contenedor{
+        justify-content: space-between;
+    }
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        font-size: 2rem;
+        color: var(--ChefchaousenBlue);
+    }
+    .cerrar-menu{
+        color: var(--White);
+        margin: 2rem;
+    } 
+    .navegador--botones.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navegador--botones{
+        transition: 300ms ease;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--ChefchaousenBlue);
+        /* padding: 6rem 0; */
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        text-align: center;
+    }
+    .navegador--botones ul{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .navegador--botones ul li{
+        margin: 0.5rem 0;
+    }
+    .navegador--boton a{
+        color: var(--White);
+        padding-bottom: 0;
+        border-bottom: none;
+        transition: 400ms ease;
+        padding: 1rem 6rem;
+    }
+    .navegador--boton a:hover{
+        color: var(--White);
+        padding: 1rem 6rem;
+        border-bottom: none;
+    }
+    .donate--bottom a{
+        border: none;
+        padding: 1rem 6rem;
+        border-color: var(--White);
+        color: var(--White);
+    }
+
+
+    .donate--text--con h3{
+        text-align: center;
+        font-size: 4rem;
+        padding: 2rem 0;
+    }
+    .donate--text--con p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .donate--text--con a{
+        margin-top: 6rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--ChefchaousenBlue);
+        border: 0.1rem solid var(--ChefchaousenBlue);
+        padding: 1rem 1.5rem;
+        transition: 300ms ease;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .donate--text--con a i{
+        font-size: 1.5rem;
+        padding: 0 0 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .navegador--botones ul{
+        display: flex;
+        column-gap: 2rem;
+        font-size: 1rem;
+    }
+    .logo{
+        width: 3rem;
+    }
+    .letras{
+        width: 15rem;
+    }
+    
+    .donate--text--con{
+        margin: 0 5rem;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--White);
+    }
+    .donate--text--con h3{
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    .donate--text--con p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .donate--text--con a{
+        margin-top: 6rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--ChefchaousenBlue);
+        border: 0.1rem solid var(--ChefchaousenBlue);
+        padding: 1rem 1.5rem;
+        transition: 300ms ease;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .donate--text--con a i{
+        font-size: 1.5rem;
+        padding: 0 0 0 0.5rem;
+    }
+}
+/*#################*/
