@@ -76,16 +76,16 @@ p{
     width: 25rem;
 }
 .donate--bottom a{
-    border: 0.1rem solid var(--ChefchaousenBlue);
+    border: 0.2rem solid var(--KellyGreen);
     padding: 1rem 1.5rem;
     transition: 300ms ease-in-out;
     border-radius: 1rem;
-    color: var(--ChefchaousenBlue);
+    color: var(--KellyGreen);
     font-weight: bold;
 }
 .donate--bottom a:hover{
     color: var(--White);
-    background-color:var(--ChefchaousenBlue);
+    background-color:var(--KellyGreen);
 }
 .navegador--boton a{
     padding-bottom: 2rem;
@@ -93,9 +93,9 @@ p{
     transition: 400ms ease;
 }
 .navegador--boton a:hover{
-    color: var(--ChefchaousenBlue);
+    color: var(--KellyGreen);
     padding-bottom: 0;
-    border-bottom: 0.1rem solid var(--ChefchaousenBlue);
+    border-bottom: 0.1rem solid var(--KellyGreen);
 }
 .abrir-menu, .cerrar-menu{
     display: none;
@@ -198,10 +198,13 @@ p{
 .card i{
     font-size: 3rem;
     color: var(--KellyGreen);
+    background-color: #4fa12048;
+    padding: 2rem;
+    border-radius: 50%;
 }
 .Content h2{
     font-size: 1.8rem;
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
 }
 .Content p{
     font-size: 1.4rem;
@@ -213,12 +216,14 @@ width: 100%;
 border-radius: 0.6rem;
 overflow: hidden;
 background: #fff;
-box-shadow: 0px 1px 10px rgba(80, 161, 32, 0.2);
+box-shadow: rgba(80, 161, 32, 0.2) 0px 8px 24px;
+/* box-shadow: 0px 1px 10px rgba(80, 161, 32, 0.2); */
 cursor: default;
 transition: all 400ms ease;
 }
 .card:hover{
-    box-shadow: 5px 5px 20px rgba(80, 161, 32, 0.4);
+    box-shadow: rgba(80, 161, 32, 0.4) 0px 8px 24px;
+    /* box-shadow: 5px 5px 20px rgba(80, 161, 32, 0.4); */
     transform: translateY(-3%);
 }
 
@@ -256,44 +261,45 @@ transition: all 400ms ease;
     background-color: var(--White);
 }
 
-.programs{
-    padding: 5rem 10rem;
-    text-align: center;
-}
-.programs h2{
-    font-size: 4rem;
-    color: var(--KellyGreen);
-    padding: 2rem 0;
-    border-bottom: 0.2rem solid var(--KellyGreen);
-    border-top: 0.2rem solid var(--KellyGreen);
-}
-.programs a{
-    text-align: center;
-    font-size: 1.4rem;
-    border: 0.2rem solid var(--KellyGreen);
-    color: var(--KellyGreen);
-    font-weight: bold;
-    padding: 1rem 2rem;
-    transition: 300ms;
-}
-.programs a:hover{
-    background-color: var(--KellyGreen);
-    color: var(--White);
-}
-.programs--con{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-gap: 1rem;
-    justify-content: center;
-    padding: 5rem 0;
-}
-
 .programs--con-items-info{
     font-size: 1.4rem;
     padding: 1rem 0;
 }
 
+
+.programs{
+    padding: 10rem;
+}
+.programs h3{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+.programs h3 span{
+    color: var(--KellyGreen);
+}
+.programs--con{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.programs--item{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--KellyGreen);
+    color: var(--White);
+    text-align: center;
+}
+.programs--item img{
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+.programs--item h4{
+    border-top: 0.2rem dotted var(--White);
+    font-size: 1.4rem;
+    padding: 2rem 0;
+}
 /* AQUI VA CODIGO DEL FOOTER */
 
 
