@@ -52,6 +52,7 @@ p{
 .contenedor{
     margin: 0 20rem;
 }
+
 /* AQUI VA CODIGO DEL HEADER */
 .navegador--contenedor{
     display: flex;
@@ -175,6 +176,45 @@ p{
 }
 
 /* AQUI VA CODIGO DEL MAIN */
+
+/* Gallery style */
+
+.gallery{
+    width: 140rem;
+    margin: 2rem auto;
+    columns: 4;
+    column-gap: 2rem;
+    width: calc(100% - 40px);
+}
+.gallery .box{
+    width: 100%;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.box:hover{
+    opacity: 0.5;
+}
+
+.gallery .box img{
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .gallery{
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery{
+        columns: 2;
+    }
+}
+/*  */
 
 .CardsContainer--con{
     padding: 5rem 10rem;
