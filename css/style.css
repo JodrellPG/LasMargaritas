@@ -178,7 +178,12 @@ p{
 /* AQUI VA CODIGO DEL MAIN */
 
 /* Gallery style */
-
+.gallery--tittle{
+    text-align: center;
+    padding: 5rem 2rem;
+    font-size: 4rem;
+    color: var(--ChefchaousenBlue);
+}
 .gallery{
     width: 140rem;
     margin: 2rem auto;
@@ -257,13 +262,11 @@ border-radius: 0.6rem;
 overflow: hidden;
 background: #fff;
 box-shadow: rgba(80, 161, 32, 0.2) 0px 8px 24px;
-/* box-shadow: 0px 1px 10px rgba(80, 161, 32, 0.2); */
 cursor: default;
 transition: all 400ms ease;
 }
 .card:hover{
     box-shadow: rgba(80, 161, 32, 0.4) 0px 8px 24px;
-    /* box-shadow: 5px 5px 20px rgba(80, 161, 32, 0.4); */
     transform: translateY(-3%);
 }
 
@@ -301,45 +304,41 @@ transition: all 400ms ease;
     background-color: var(--White);
 }
 
-.programs--con-items-info{
-    font-size: 1.4rem;
-    padding: 1rem 0;
-}
-
-
 .programs{
-    padding: 10rem;
+    padding: 5rem 10rem;
 }
 .programs h3{
-    font-size: 4rem;
-    margin-bottom: 5rem;
-}
-.programs h3 span{
     color: var(--KellyGreen);
+    font-size: 4rem;
+    text-align: center;
+    padding: 0 0 5rem 0;
 }
 .programs--con{
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-}
-.programs--item{
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: var(--KellyGreen);
-    color: var(--White);
     text-align: center;
+    columns: 4;
+    width: calc(100% - 400ms);
+    column-gap: 2rem;
 }
-.programs--item img{
-    border-radius: 1rem;
-    padding-bottom: 1rem;
+.programs--items{
+    box-shadow: rgba(80, 161, 32, 0.2) 0px 8px 24px;
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    transition: 300ms;
 }
-.programs--item h4{
-    border-top: 0.2rem dotted var(--White);
+.programs--items:hover{
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+.programs--items img{
+    border-radius: 1.5rem;
+}
+.programs--items p{
+    font-weight: bold;
     font-size: 1.4rem;
     padding: 2rem 0;
 }
+
 /* AQUI VA CODIGO DEL FOOTER */
 
 
@@ -461,6 +460,10 @@ transition: all 400ms ease;
     .sendgirltocollege--info a{
         margin-top: 1rem;
     }
+    .gallery--tittle{
+        padding: 3rem;
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -533,6 +536,9 @@ transition: all 400ms ease;
     .sendgirltocollege--info p{
         font-size: 1.5rem;
     }
-
+    .gallery--tittle{
+        padding: 2rem 3rem;
+        font-size: 2.5rem;
+    }
 }
 /*#################*/
