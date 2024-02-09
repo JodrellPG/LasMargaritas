@@ -369,7 +369,7 @@ transition: all 400ms ease;
     text-align: center;
 }
 .programs--btn-con{
-    margin: 8rem 0 2rem 0;
+    margin: 6rem 0 2rem 0;
 }
 .programs--btn-con a{
     font-weight: bold;
@@ -391,26 +391,63 @@ transition: all 400ms ease;
 }
 .programs--con{
     text-align: center;
-    columns: 4;
-    width: calc(100% - 400ms);
+    display: grid;
+    grid-template-columns: 49% 49%;
     column-gap: 2rem;
 }
-.programs--items{
-    background-color: var(--White);
-    padding: 1rem;
-    transition: 300ms;
-}
-.programs--items:hover{
-    padding: 1rem;
+.programs--items-con{
+    color: var(--White);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    background-color: #4fa120d5;
+    height: 100%;
+    padding: 4rem 2rem;
     border-radius: 1.5rem;
 }
-.programs--items i{
-    font-size: 4rem;
+.university{
+    background-image: url(../img/gallery/IMG_2072.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.programs--items p{
+.STEM{
+    background-image: url(../img/steam.JPG);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Literacy{
+    background-image: url(../img/lectura.JPG);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Summer--camp{
+    background-image: url(../img/gallery/IMG_2077.webp);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.programs--items{
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    transition: 500ms;
+}
+.programs--items:hover{
+    box-shadow: rgba(80, 161, 32, 0.4) 5px 5px, rgba(80, 161, 32, 0.3) 10px 10px, rgba(80, 161, 32, 0.2) 15px 15px, rgba(80, 161, 32, 0.1) 20px 20px, rgba(80, 161, 32, 0.05) 25px 25px;
+}
+.programs--items i{
+    font-size: 8rem;
+}
+
+.programs--items-con h4{
     font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.programs--items-con p{
     font-size: 1.4rem;
-    padding: 2rem 0;
 }
 
 /* AQUI VA CODIGO DEL FOOTER */
@@ -547,6 +584,32 @@ transition: all 400ms ease;
         padding: 3rem;
         font-size: 3rem;
     }
+
+    .programs--con{
+        grid-template-columns: 100%;
+    }
+
+    .programs--items i{
+        font-size: 6rem;
+    }
+    .programs--items-con{
+        grid-template-columns: 100%;
+    }
+
+    .programs{
+        padding: 5rem 3rem;
+    }
+    .programs h3{
+        font-size: 3rem;
+    }
+
+    .programs--btn-con{
+        margin: 4rem 0 2rem 0;
+    }
+    .programs--btn-con a{
+        font-size: 1.5rem;
+        padding: 1.2rem 4rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -622,6 +685,9 @@ transition: all 400ms ease;
     .gallery--tittle{
         padding: 2rem 3rem;
         font-size: 2.5rem;
+    }
+    .programs--items i{
+        display: none;
     }
 }
 /*#################*/
