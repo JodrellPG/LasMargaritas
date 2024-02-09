@@ -88,7 +88,7 @@ p{
     color: var(--White);
     background-color:var(--KellyGreen);
 }
-.navegador--boton a{
+/* .navegador--boton a{
     padding-bottom: 2rem;
     border-bottom: 0.1rem solid transparent;
     transition: 400ms ease;
@@ -97,7 +97,37 @@ p{
     color: var(--KellyGreen);
     padding-bottom: 0;
     border-bottom: 0.1rem solid var(--KellyGreen);
+} */
+
+/* Menu Hover Effects Style 5 */
+
+.navegador--boton a {
+	position: relative;
+	z-index: 1;
+    transition: 0.4s;
 }
+.navegador--boton a:hover{
+    color: var(--KellyGreen);
+}
+.navegador--boton a:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background: var(--KellyGreen);
+    width: 0;
+    height: 0.1rem;
+    bottom: -0.5rem;
+	border-radius:0.5rem;
+    left: 50%;
+    transition: 0.4s cubic-bezier(0.25, 0.1, 0, 2.02);
+}
+
+.navegador--boton a:hover:before {
+    width: calc(100% + 0.5rem);
+    left: calc(0.5rem / -2);
+}
+
 .abrir-menu, .cerrar-menu{
     display: none;
 }
@@ -388,7 +418,7 @@ transition: all 400ms ease;
 
 
 /* RESPONSIVE */
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 1140px) {
     .navegador--contenedor{
         justify-content: space-between;
     }
@@ -440,6 +470,15 @@ transition: all 400ms ease;
         padding: 1rem 6rem;
         border-bottom: none;
     }
+
+    .navegador--boton a:before {
+        background: none;
+    }
+    
+    .navegador--boton a:hover:before {
+        width: 0;
+    }
+
     .donate--bottom a{
         border: none;
         padding: 1rem 6rem;
