@@ -14,6 +14,8 @@ function enableScroll() {
     window.onscroll = function() {};
 }
 
+/*###################################### */
+
 const navegadorBotones = document.querySelector("#navegador--botones");
 const abrirMenu = document.querySelector("#abrir-menu");
 const cerrarMenu = document.querySelector("#cerrar-menu");

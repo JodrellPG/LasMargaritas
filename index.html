@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- API para los fade transitions -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,35 +43,34 @@
                 <button class="cerrar-menu" id="cerrar-menu1"><i class="fa-solid fa-xmark"></i></button>
                 <ul>
                     <li class="navegador--boton">
-                        <a href="">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="">About Us</a>
+                        <a href="#">About Us</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="">Volunteers</a>
+                        <a href="#">Volunteers</a>
                     </li>
                     <li class="navegador--boton">
                         <a href="gallery.html">Gallery</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="">Programs</a>
+                        <a href="#">Programs</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="">Contact</a>
+                        <a href="#">Contact</a>
                     </li>
                     <li class="donate--bottom">
-                        <a href="">Donate Us</a>
+                        <a href="#">Donate Us</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
 
         <div class="donate--anunce--con">
             <div class="donate--anunce">
-                <div class="donate--text--con" id="cerrar-menu">
-                    <h3>TOGETHER WE CAN CHANGE THE WORLD</h3>
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400" class="donate--text--con" id="cerrar-menu">
+                    <h3 data-aos="fade-up">TOGETHER WE CAN CHANGE THE WORLD</h3>
                     <p> Let's unite our efforts to ensure that every child receives the care and assistance they deserve. By working together, we can contribute to creating positive changes and improving the lives of these children.</p>
                     <a href="">DONATE NOW <i class="fa-solid fa-hand-holding-dollar"></i></a>
                 </div>
@@ -80,7 +82,7 @@
     <main id="main">
 
 <!--  -->
-        <section class="CardsContainer--con">
+        <section class="CardsContainer--con" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400">
             <div class="CardsContainer--con-encabezado">
                 <h5>What we are doing?</h5>
                 <h3>We are in a mission to help the helpless</h3>
@@ -113,7 +115,7 @@
 <!--  -->
 
         <section class="sendgirltocollege--con">
-            <div class="sendgirltocollege">
+            <div class="sendgirltocollege" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1400">
                 <div class="sendgirltocollege--img">
                     <img src="/img/sendagirltocollegeIMG.jpg" alt="">
                 </div>
@@ -132,24 +134,27 @@
             <h3>Our Programs</h3>
             <div class="programs--con">
                 <div class="programs--items">
-                    <img src="/img/becas.JPG" alt="">
+                    <i class="fa-solid fa-graduation-cap"></i>
                     <p>University scholarships </p>
                 </div>
                 <div class="programs--items">
-                    <img src="/img/arte.JPG" alt="">
+                    <i class="fa-solid fa-palette"></i>
                     <p>Art</p>
                 </div>
                 <div class="programs--items">
-                    <img src="/img/steam.JPG" alt="">
+                    <i class="fa-solid fa-robot"></i>
                     <p>STEM</p>
                 </div>
                 <div class="programs--items">
-                    <img src="/img/lectura.JPG" alt="">
+                    <i class="fa-solid fa-book-open-reader"></i>
                     <p>Literacy (children and adults)</p>
                 </div>
             </div>
 
-            <a href="">See All</a>
+            <div class="programs--btn-con">
+                <a href="">See All</a>
+            </div>
+
 
         </section>
 
@@ -159,5 +164,9 @@
     </footer>
 
     <script src="/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
