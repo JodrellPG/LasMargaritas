@@ -450,6 +450,78 @@ transition: all 400ms ease;
     font-size: 1.4rem;
 }
 
+.aboutus--tittle-con{
+    background-color: var(--ChefchaousenBlue);
+    color: var(--White);
+    text-align: center;
+    padding: 6rem 20rem;
+}
+.aboutus--tittle{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.aboutus--text{
+    font-size: 1.4rem;
+}
+
+.ourmission--con, .ourstory--con{
+    margin: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4rem;
+    align-items: center;
+}
+
+.ourmission--imgs, .ourstory--imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; /* Espacio entre las imágenes, puedes ajustarlo según tus preferencias */
+}
+.ourmission--text h4, .ourstory--text h4{
+    font-size: 4rem;
+    margin: 4rem 0;
+    color: var(--ChefchaousenBlue);
+}
+.ourstory--text h4{
+    color: var(--KellyGreen);
+}
+.ourmission--text p, .ourstory--text p{
+    font-size: 1.4rem;
+}
+.ourmission--image {
+    height: 25rem; /* Ajusta la altura según tus necesidades */
+    background-size: cover;
+    border-radius: 1rem;
+}
+.image1 {
+    background-image: url('/img/IMG_2154.JPG');
+    background-position: center;
+}
+.image2 {
+    background-image: url('/img/IMG_2124.JPG');
+    background-position: center;
+}
+.image3 {
+    background-position: center;
+    grid-column: span 2; /* Ocupa el ancho completo de las dos columnas */
+    background-image: url('/img/ninos2.jpg');
+}
+
+.carrusel--con{
+    padding: 5rem 10rem;
+}
+.carrusel--tittle{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--ChefchaousenBlue);
+}
+.wrapper .carrusel{
+    display: flex;
+    white-space: nowrap;
+}
+.carrusel blockquote{
+    width: calc(100% / 3);
+}
 /* AQUI VA CODIGO DEL FOOTER */
 
 
@@ -610,6 +682,28 @@ transition: all 400ms ease;
         font-size: 1.5rem;
         padding: 1.2rem 4rem;
     }
+
+    .aboutus--tittle-con{
+        padding: 6rem 10rem;
+    }
+    .aboutus--tittle{
+        font-size: 3rem;
+    }
+    
+    .ourmission--con{
+        margin: 5rem 10rem;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+        align-items: center;
+    }
+    .ourmission--imgs {
+        display: none;
+    }
+    .ourmission--text h4{
+        text-align: center;
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -688,6 +782,28 @@ transition: all 400ms ease;
     }
     .programs--items i{
         display: none;
+    }
+
+    
+    .aboutus--tittle-con{
+        padding: 6rem 3rem;
+    }
+    .aboutus--tittle{
+        font-size: 3rem;
+    }
+    .ourmission--con{
+        margin: 5rem 4rem;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+        align-items: center;
+    }
+    .ourmission--imgs {
+        display: none;
+    }
+    .ourmission--text h4{
+        text-align: center;
+        font-size: 3rem;
     }
 }
 /*#################*/
