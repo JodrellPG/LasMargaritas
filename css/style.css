@@ -289,6 +289,10 @@ p{
     width: 750px;
     object-fit:cover;
 }
+.popup-image i{
+    margin: 0 22rem;
+    z-index: 2;
+}
 @media (max-width: 1200px) {
     .gallery{
         columns: 3;
@@ -301,6 +305,10 @@ p{
     }
     .gallery .popup-image img{
         width: 95%;
+    }
+    .popup-image i{
+        margin: 0 0;
+        z-index: 2;
     }
 }
 /*  */
@@ -480,7 +488,7 @@ transition: all 400ms ease;
     background-color: var(--ChefchaousenBlue);
     color: var(--White);
     text-align: center;
-    padding: 6rem 20rem;
+    padding: 0 20rem;
 }
 .aboutus--tittle{
     font-size: 4rem;
@@ -491,17 +499,23 @@ transition: all 400ms ease;
 }
 
 .ourmission--con, .ourstory--con{
-    margin: 0 10rem;
+    padding: 0 10rem;
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 4rem;
     align-items: center;
 }
-
+.ourstory--con{
+    background-color: var(--KellyGreen);
+    color: var(--White);
+}
 .ourmission--imgs, .ourstory--imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; /* Espacio entre las imágenes, puedes ajustarlo según tus preferencias */
+}
+.ourstory--imgs{
+    border: 0.2rem solid var(--White);
 }
 .ourmission--text h3, .ourstory--text h3{
     font-size: 4rem;
@@ -509,7 +523,7 @@ transition: all 400ms ease;
     color: var(--ChefchaousenBlue);
 }
 .ourstory--text h3{
-    color: var(--KellyGreen);
+    color: var(--White);
 }
 .ourmission--text p, .ourstory--text p{
     font-size: 1.4rem;
@@ -759,7 +773,7 @@ input::placeholder, textarea::placeholder {
     margin: auto;
 }
   
-  /* Hide the images by default */
+/* Hide the images by default */
 .mySlides {
     display: none;
 }
@@ -768,7 +782,8 @@ input::placeholder, textarea::placeholder {
     width: 100%;
 }
   
-  /* Next & previous buttons */
+/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -780,19 +795,19 @@ input::placeholder, textarea::placeholder {
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-    background-color: #0000007c;
 }
 
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 4rem 0 0 4rem;
+}
+.prev {
+    left: 0;
+    border-radius: 0 4rem 4rem 0;
 }
   
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    
-}
   
 /* Caption text */
 .text {
@@ -992,14 +1007,14 @@ input::placeholder, textarea::placeholder {
     }
 
     .aboutus--tittle-con{
-        padding: 6rem 10rem;
+        padding: 0 10rem;
     }
     .aboutus--tittle{
         font-size: 3rem;
     }
 
     .ourmission--con, .ourstory--con{
-        margin: 0 10rem;
+        padding: 0 10rem;
         display: grid;
         grid-template-columns: 100%;
         gap: 2rem;
@@ -1033,6 +1048,10 @@ input::placeholder, textarea::placeholder {
 
     .reading--club-con{
         flex-direction: column;
+    }
+    .popup-image i{
+        margin: 0 0;
+        z-index: 2;
     }
 }
 
@@ -1116,13 +1135,13 @@ input::placeholder, textarea::placeholder {
 
 
     .aboutus--tittle-con{
-        padding: 6rem 3rem;
+        padding: 0 3rem;
     }
     .aboutus--tittle{
         font-size: 3rem;
     }
     .ourmission--con, .ourstory--con{
-        margin: 0 4rem;
+        padding: 0 4rem;
         display: grid;
         grid-template-columns: 100%;
         gap: 2rem;
