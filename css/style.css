@@ -936,6 +936,7 @@ input::placeholder, textarea::placeholder {
     }
 
     .navegador--botones{
+        z-index: 1;
         transition: 300ms ease;
         opacity: 0;
         visibility: hidden;
@@ -1131,6 +1132,16 @@ input::placeholder, textarea::placeholder {
         margin: 0 0;
         z-index: 2;
     }
+
+    .community--operations h1{
+        font-size: 3rem;
+    }
+    .covid19--operation-info h2{
+        font-size: 3rem;
+    }
+    .covid19--operation-info p{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1264,6 +1275,26 @@ input::placeholder, textarea::placeholder {
         padding: 4rem 1rem;
         font-size: 3rem;
     }
+
+    .community--operations h1{
+        font-size: 2.5rem;
+    }
+    .covid19--operation{
+        margin: 5rem 2rem;
+        padding: 5rem 2rem;
+        border-radius: 2rem;
+    }
+    .covid19--operation{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .covid19--operation-info h2{
+        font-size: 2.5rem;
+    }
+
 
 }
 /*#################*/
