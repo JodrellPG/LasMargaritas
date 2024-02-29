@@ -56,7 +56,7 @@ p{
 .navegador--contenedor{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem 4rem;
 }
 .navegador--botones ul{
@@ -548,6 +548,123 @@ transition: all 400ms ease;
     background-image: url('/img/ninos2.jpg');
 }
 
+.time-line{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+.time-line--tittle{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear both;
+    opacity: 0;
+}
+@keyframes  movedown {
+   0%{
+    opacity: 1;
+    transform: translateY(-30px);
+   }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+   }
+}
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+.text-box{
+    color: var(--White);
+    padding: 5rem;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.text-box1{
+    background-color: var(--ChefchaousenBlue);
+}
+.text-box2{
+    background-color: var(--KellyGreen);
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
+}
+.time-line::after{
+    position: absolute;
+    content:'';
+    width: 4px;
+    height: 100%;
+    background:var(--Black);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear both;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.text-box h2{
+    font-weight: 600;
+    font-size: 3rem;
+}
+.timeline--fecha{
+    color: var(--Black);
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 3.5rem 0;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid var(--ChefchaousenBlue);
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid var(--KellyGreen);
+    left: -15px;
+}
 
 .kids--con{
     padding: 4rem 0;
@@ -772,6 +889,24 @@ input::placeholder, textarea::placeholder {
 .programa1--club-info p, .programa2--club-info p{
     font-size: 1.4rem;
 }
+.summer--camp-buttom{
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.summer--camp-buttom a{
+    padding: 1.5rem 4rem;
+    color: var(--ChefchaousenBlue);
+    border: 0.2rem solid var(--ChefchaousenBlue);
+    transition: 300ms ease-in-out;
+}
+.summer--camp-buttom a:hover{
+    padding: 1.5rem 4rem;
+    color: var(--White);
+    background-color: var(--ChefchaousenBlue);
+    border: 0.2rem solid var(--ChefchaousenBlue);
+}
 
 /* LIDE CSS */
 /* Slideshow container */
@@ -779,7 +914,7 @@ input::placeholder, textarea::placeholder {
     position: relative;
     margin: auto;
 }
-  
+
 /* Hide the images by default */
 .mySlides {
     display: none;
@@ -788,7 +923,7 @@ input::placeholder, textarea::placeholder {
     object-fit:contain;
     width: 100%;
 }
-  
+
 /* Next & previous buttons */
 
 .prev, .next {
@@ -813,9 +948,9 @@ input::placeholder, textarea::placeholder {
     left: 0;
     border-radius: 0 4rem 4rem 0;
 }
-  
+
 /* On hover, add a black background color with a little bit see-through */
-  
+
 /* Caption text */
 .text {
     color: #f2f2f2;
@@ -826,7 +961,7 @@ input::placeholder, textarea::placeholder {
     width: 100%;
     text-align: center;
 }
-  
+
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
@@ -835,17 +970,17 @@ input::placeholder, textarea::placeholder {
     position: absolute;
     top: 0;
 }
-  
+
 .active, .dot:hover {
     background-color: #717171;
 }
-  
+
 /* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -864,8 +999,8 @@ input::placeholder, textarea::placeholder {
 }
 .covid19--operation{
     display: grid;
-    grid-template-columns: 48% 48%;
-    gap: 4rem;
+    grid-template-columns: 56% 36%;
+    gap: 8rem;
     align-items: center;
 }
 .covid19--operation-info{
@@ -874,6 +1009,9 @@ input::placeholder, textarea::placeholder {
 .covid19--operation-info h2{
     font-size: 4rem;
     text-align: center;
+    border-bottom: 0.2rem solid var(--White);
+    border-top: 0.2rem solid var(--White);
+    padding: 2rem 0;
 }
 .covid19--operation-info p{
     font-size: 1.5rem;
@@ -1142,6 +1280,42 @@ input::placeholder, textarea::placeholder {
     .covid19--operation-info p{
         font-size: 1.5rem;
     }
+
+    .time-line{
+        margin: 0 auto;
+    }
+    .time-line--tittle{
+        font-size: 3.5rem;
+    }
+    .time-line::after{
+        left: 30px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box{
+        font-size: 13px;
+        padding: 3rem;
+    }
+    .timeline--fecha{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container-arrow,.right-container-arrow{
+        border-left: 0;
+        left: -15px;
+    }
+    .left-container-arrow{
+        border-right: 15px solid var(--ChefchaousenBlue);
+    }
+    .right-container-arrow{
+        border-right: 15px solid var(--KellyGreen);
+    }
+    
 }
 
 @media screen and (max-width: 640px) {
