@@ -886,24 +886,42 @@ input::placeholder, textarea::placeholder {
     color: var(--ChefchaousenBlue);
     border-color: var(--ChefchaousenBlue);
 }
+.programa1--club-info, .programa2--club-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .programa1--club-info p, .programa2--club-info p{
     font-size: 1.4rem;
 }
-.summer--camp-buttom{
+.programs1--buttom, .programs2--buttom{
     text-align: center;
     margin: 4rem 0;
     font-size: 1.5rem;
     font-weight: bold;
 }
-.summer--camp-buttom a{
-    padding: 1.5rem 4rem;
-    color: var(--ChefchaousenBlue);
-    border: 0.2rem solid var(--ChefchaousenBlue);
+.programs1--buttom a, .programs2--buttom a{
+    padding: 1rem 4rem;
     transition: 300ms ease-in-out;
 }
-.summer--camp-buttom a:hover{
-    padding: 1.5rem 4rem;
+.programs1--buttom a{
+    color: var(--KellyGreen);
+    border: 0.2rem solid var(--KellyGreen);
+}
+.programs2--buttom a{
+    color: var(--ChefchaousenBlue);
+    border: 0.2rem solid var(--ChefchaousenBlue);
+}
+.programs1--buttom a:hover, .programs2--buttom a:hover{
     color: var(--White);
+}
+
+.programs1--buttom a:hover{
+    background-color: var(--KellyGreen);
+    border: 0.2rem solid var(--KellyGreen);
+}
+
+.programs2--buttom a:hover{
     background-color: var(--ChefchaousenBlue);
     border: 0.2rem solid var(--ChefchaousenBlue);
 }
@@ -991,29 +1009,39 @@ input::placeholder, textarea::placeholder {
     font-size: 4rem;
     color: var(--ChefchaousenBlue);
 }
-.covid19--operation{
-    background-color: var(--ChefchaousenBlue);
+.operation1--con, .operation2--con{
     margin: 5rem;
     padding: 5rem;
     border-radius: 2rem;
 }
-.covid19--operation{
+
+.operation1--con{
     display: grid;
     grid-template-columns: 56% 36%;
     gap: 8rem;
     align-items: center;
+    background-color: var(--ChefchaousenBlue);
 }
-.covid19--operation-info{
+.operation2--con{
+    display: grid;
+    grid-template-columns: 36% 56%;
+    gap: 8rem;
+    align-items: center;
+    background-color: var(--KellyGreen);
+
+}
+
+.operation1--con-info, .operation2--con-info{
     color: var(--White);
 }
-.covid19--operation-info h2{
+.operation1--con-info h2, .operation2--con-info h2{
     font-size: 4rem;
     text-align: center;
     border-bottom: 0.2rem solid var(--White);
     border-top: 0.2rem solid var(--White);
     padding: 2rem 0;
 }
-.covid19--operation-info p{
+.operation1--con-info p, .operation2--con-info p{
     font-size: 1.5rem;
 }
 
@@ -1229,7 +1257,10 @@ input::placeholder, textarea::placeholder {
         gap: 2rem;
         align-items: center;
     }
-    .ourmission--imgs, .ourstory--imgs{
+    /* .ourmission--imgs, .ourstory--imgs{
+        display: none;
+    } */
+    .ourstory--imgs{
         display: none;
     }
     .ourmission--text h3, .ourstory--text h3{
@@ -1274,10 +1305,10 @@ input::placeholder, textarea::placeholder {
     .community--operations h1{
         font-size: 3rem;
     }
-    .covid19--operation-info h2{
+    .operation1--con-info h2, .operation2--con-info h2{
         font-size: 3rem;
     }
-    .covid19--operation-info p{
+    .operation1--con-info p, .operation2--con-info p{
         font-size: 1.5rem;
     }
 
@@ -1410,9 +1441,9 @@ input::placeholder, textarea::placeholder {
         gap: 2rem;
         align-items: center;
     }
-    .ourmission--imgs, .ourstory--imgs{
+    /* .ourmission--imgs, .ourstory--imgs{
         display: none;
-    }
+    } */
     .ourmission--text h3, .ourstory--text h3{
         text-align: center;
         font-size: 3rem;
@@ -1453,19 +1484,19 @@ input::placeholder, textarea::placeholder {
     .community--operations h1{
         font-size: 2.5rem;
     }
-    .covid19--operation{
+    .operation1--con, .operation2--con{
         margin: 5rem 2rem;
         padding: 5rem 2rem;
         border-radius: 2rem;
-    }
-    .covid19--operation{
         display: grid;
         grid-template-columns: 100%;
         gap: 4rem;
         align-items: center;
     }
-
-    .covid19--operation-info h2{
+    .operation2--con-slide{
+        order: 2;
+    }
+    .operation1--con-info h2, .operation2--con-info h2{
         font-size: 2.5rem;
     }
 
