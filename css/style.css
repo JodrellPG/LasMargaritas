@@ -1082,6 +1082,59 @@ input::placeholder, textarea::placeholder {
     font-size: 1.2rem;
 } */
 
+.reading--club-tittle{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--KellyGreen);
+    width: 80rem;
+    border-top: 0.2rem solid var(--KellyGreen);
+    border-bottom: 0.2rem solid var(--KellyGreen);
+    margin: 4rem auto;
+}
+.importance-of-reading--con{
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: 58% 38%;
+    gap: 4rem;
+    align-items: center;
+}
+.importance-of-reading--con h2{
+    font-size: 2.5rem;
+    color: var(--KellyGreen);
+}
+.importance-of-reading--con p{
+    font-size: 1.5rem;
+}
+
+.donate--reading{
+    color: var(--White);
+    background-color: var(--KellyGreen);
+    padding: 5rem 10rem;
+}
+.donate--reading h2{
+    font-size: 4rem;
+    text-align: center;
+}
+.donate--reading p{
+    font-size: 1.5rem;
+    padding: 4rem 0;
+}
+.donate--reading-btn{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.donate--reading-btn a{
+    color: var(--White);
+    font-weight: bold;
+    border: 0.2rem solid var(--White);
+    padding: 1rem 4rem;
+    transition: 300ms ease-in-out;
+}
+.donate--reading-btn a:hover{
+    background-color: var(--White);
+    color: var(--KellyGreen);
+}
 /* RESPONSIVE */
 @media screen and (max-width: 1140px) {
     .navegador--contenedor{
@@ -1346,6 +1399,26 @@ input::placeholder, textarea::placeholder {
     .right-container-arrow{
         border-right: 15px solid var(--KellyGreen);
     }
+
+    .reading--club-tittle{
+        font-size: 3rem;
+        width: 60rem;
+        margin: 4rem auto -4rem auto;
+    }
+    .importance-of-reading--con{
+        grid-template-columns: 100%;
+    }
+    .importance-of-reading--con h2{
+        font-size: 2.5rem;
+        color: var(--KellyGreen);
+    }
+    .importance-of-reading--con p{
+        font-size: 1.5rem;
+    }
+
+    .donate--reading h2{
+        font-size: 3rem;
+    }
     
 }
 
@@ -1500,6 +1573,35 @@ input::placeholder, textarea::placeholder {
         font-size: 2.5rem;
     }
 
+    .reading--club-tittle{
+        width: auto;
+        margin: 4rem ;
+    }
+    .importance-of-reading--con{
+        margin: 5rem;
+    }
+    .donate--reading{
+        padding: 5rem;
+    }
+    .donate--reading p{
+        font-size: 1.5rem;
+        padding: 4rem 0;
+    }
+    .donate--reading-btn{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .donate--reading-btn a{
+        color: var(--White);
+        font-weight: bold;
+        border: 0.2rem solid var(--White);
+        padding: 1rem 4rem;
+        transition: 300ms ease-in-out;
+    }
+    .donate--reading-btn a:hover{
+        background-color: var(--White);
+        color: var(--KellyGreen);
+    }
 
 }
 /*#################*/
