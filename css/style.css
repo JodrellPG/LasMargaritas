@@ -664,88 +664,6 @@ transition: all 400ms ease;
     border-right: 15px solid var(--KellyGreen);
     left: -15px;
 }
-/*css de volunteers*/
-
-.volunteers--tittle{
-    text-align: center;
-    padding: 4rem 0;
-    font-size: 4rem;
-    color: var(--White);
-    background-color: #3F8EFC;
-}
-.voluntario1--club, .voluntario2--club{
-    padding: 5rem 10rem;
-}
-.voluntario1--club-con, .voluntario2--club-con{
-    display: grid;
-    grid-template-columns: 46% 46%;
-    gap: 8rem;
-    align-items: center;
-}
-
-.voluntario1--club-tittle, .voluntario2--club-tittle{
-    font-size: 3rem;
-    padding: 2rem 0;
-    margin: 4rem 0;
-    color: var(--KellyGreen);
-    border-bottom: 0.2rem solid var(--KellyGreen);
-    border-top: 0.2rem solid var(--KellyGreen);
-    text-align: center;
-}
-.voluntario1--club-subtittle,
-.voluntario2--club-subtittle {
-    font-size: 2rem; 
-    margin: 2rem 0; /* Espacio entre el título y el subtítulo */
-    color: var(--KellyGreen); /* Puedes cambiar el color según tu preferencia */
-    text-align: center;
-}
-.voluntario2--club-subtittle{
-    color: var(--ChefchaousenBlue);
-    border-color: var(--ChefchaousenBlue);
-}
-.voluntario2--club-tittle{
-    color: var(--ChefchaousenBlue);
-    border-color: var(--ChefchaousenBlue);
-}
-.voluntario1--club-info, .voluntario2--club-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.voluntario1--club-info p, .voluntario2--club-info p{
-    font-size: 1.4rem;
-}
-.voluntario1--buttom, .voluntario2--buttom{
-    text-align: center;
-    margin: 4rem 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.voluntario1--buttom a, .voluntario2--buttom a{
-    padding: 1rem 4rem;
-    transition: 300ms ease-in-out;
-}
-.voluntario1--buttom a{
-    color: var(--KellyGreen);
-    border: 0.2rem solid var(--KellyGreen);
-}
-.voluntario2--buttom a{
-    color: var(--ChefchaousenBlue);
-    border: 0.2rem solid var(--ChefchaousenBlue);
-}
-.voluntario1--buttom a:hover, .voluntario2--buttom a:hover{
-    color: var(--White);
-}
-
-.voluntario1--buttom a:hover{
-    background-color: var(--KellyGreen);
-    border: 0.2rem solid var(--KellyGreen);
-}
-
-.voluntario2--buttom a:hover{
-    background-color: var(--ChefchaousenBlue);
-    border: 0.2rem solid var(--ChefchaousenBlue);
-}
 /* */
 .Slides{
     width: 300px;
@@ -1393,17 +1311,6 @@ input::placeholder, textarea::placeholder {
     .programa2--club-img{
         order: 2;
     }
-    .voluntario1--club-con, .voluntario2--club-con{
-        grid-template-columns: 100%;
-        gap: 4rem;
-    }
-    .voluntario2--club-con{
-        display: flex;
-        flex-direction: column;
-    }
-    .voluntario2--club-img{
-        order: 2;
-    }
     .popup-image i{
         margin: 0 0;
         z-index: 2;
@@ -1584,17 +1491,6 @@ input::placeholder, textarea::placeholder {
         margin: 0 0 4rem 0;
     }
     .programs--tittle{
-        padding: 4rem 1rem;
-        font-size: 3rem;
-    }
-    .voluntario1--club, .voluntario2--club{
-        padding: 3rem;
-    }
-    .voluntario1--club-tittle, .voluntario2--club-tittle{
-        font-size: 2.5rem;
-        margin: 0 0 4rem 0 ;
-    }
-    .volunteers--tittle{
         padding: 4rem 1rem;
         font-size: 3rem;
     }
