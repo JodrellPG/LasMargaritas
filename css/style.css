@@ -395,7 +395,6 @@ transition: all 400ms ease;
     color: var(--ChefchaousenBlue);
     background-color: var(--White);
 }
-
 .programs{
     padding: 5rem 10rem;
     text-align: center;
@@ -665,7 +664,22 @@ transition: all 400ms ease;
     border-right: 15px solid var(--KellyGreen);
     left: -15px;
 }
-
+/* */
+.Slides{
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+.Slides img{
+    width: 100%;
+    left: 0;
+    position:sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
 .kids--con{
     padding: 4rem 0;
 }
@@ -1045,7 +1059,7 @@ input::placeholder, textarea::placeholder {
     font-size: 1.5rem;
 }
 
-/*  */
+/**/
 
 
 /* AQUI VA CODIGO DEL FOOTER */
@@ -1082,6 +1096,7 @@ input::placeholder, textarea::placeholder {
     font-size: 1.2rem;
 } */
 
+<<<<<<< HEAD
 .clubs-textup, .clubs-textup2{
     text-align: center;
     padding: 2rem 10rem;
@@ -1275,6 +1290,8 @@ input::placeholder, textarea::placeholder {
     background-color: var(--ChefchaousenBlue);
     border: 0.2rem solid var(--ChefchaousenBlue);
 }
+=======
+>>>>>>> f5a9ec4cef8faec9697fd97733ed7fd715d4cc1b
 /* RESPONSIVE */
 @media screen and (max-width: 1140px) {
     .navegador--contenedor{
@@ -1539,6 +1556,7 @@ input::placeholder, textarea::placeholder {
     .right-container-arrow{
         border-right: 15px solid var(--KellyGreen);
     }
+<<<<<<< HEAD
 
     .clubs-textup, .clubs-textup2{
         padding: 2rem 5rem;
@@ -1591,6 +1609,9 @@ input::placeholder, textarea::placeholder {
     .voluntario2--club-img{
         order: 2;
     }   
+=======
+    
+>>>>>>> f5a9ec4cef8faec9697fd97733ed7fd715d4cc1b
 }
 
 @media screen and (max-width: 640px) {
@@ -1724,7 +1745,6 @@ input::placeholder, textarea::placeholder {
         padding: 4rem 1rem;
         font-size: 3rem;
     }
-
     .community--operations h1{
         font-size: 2.5rem;
     }
@@ -1744,6 +1764,7 @@ input::placeholder, textarea::placeholder {
         font-size: 2.5rem;
     }
 
+<<<<<<< HEAD
     .importance-of-reading--con{
         margin: 5rem;
     }
@@ -1786,5 +1807,8 @@ input::placeholder, textarea::placeholder {
         padding: 4rem 1rem;
         font-size: 3rem;
     }
+=======
+
+>>>>>>> f5a9ec4cef8faec9697fd97733ed7fd715d4cc1b
 }
 /*#################*/
