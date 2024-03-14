@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Las Margaritas Foundation is a non-profit institution that helps children to read and develop in a healthy and creative environment.">
+
+    <!-- API para los fade transitions -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- FONTS API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- ICONS API -->
+    <script src="https://kit.fontawesome.com/b1009e9282.js" crossorigin="anonymous"></script>
+
+    <!-- Icono de la pagina web -->
+    <link rel="shortcut icon" href="/img/IconoPNG.png" type="image/x-icon">
+
+    <title>Las Margaritas Foundation - Reading Club</title>
+</head>
+<body>
+
+    <header>
+        <div class="navegador--contenedor">
+            <div class="imagenes">
+                <div>
+                    <img class="logo" src="/img/Icono.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="letras" src="/img/letras.jpeg" alt="">
+                </div>
+            </div>
+
+            <button class="abrir-menu" id="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+
+            <nav class="navegador--botones" id="navegador--botones">
+                <button class="cerrar-menu" id="cerrar-menu1"><i class="fa-solid fa-xmark"></i></button>
+                <ul>
+                    <li class="navegador--boton">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/about-us.html">About Us</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/volunteers.html">Volunteers</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/gallery.html">Gallery</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/programs.html">Programs</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/community-operations.html">Community outreach</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="navegador--boton">
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                    <li class="donate--bottom">
+                        <a href="#">Donate Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main id="main">
+        <div class="clubs-textup" id="cerrar-menu">
+            <h1>¡Welcome to the <span>Internship Program</span></h1>
+            <br>
+            <p>Building the Future Together! Welcome to the Internship Program by Fundacion Las Margaritas.</p>
+        </div>
+        
+        <section class="Inter--demostration">
+            <div><img src="/img/Intership/IMG_1989.jpg" alt=""></div>
+            <div><img src="/img/Intership/IMG_2066.jpg" alt=""></div>
+            <div><img src="/img/basura.jpg" alt=""></div>
+        </section>
+
+        <section class="Inter--info1">
+            <div class="Inter--info1-text">
+                <h2>Explore Your Potential: Internship Program  </h2>
+                <P>Thanks to the collaboration of Nathalie Brito, in January 2024, we launched an internship program at our foundation. We have two students from the Pontificia Universidad Católica Madre y Maestra (PUCMM) and three students from the Instituto Politécnico Loyola (IPL). These interns have been particularly instrumental in developing our STEAM program and our PUEDO program.</P>
+            </div>
+            <div class="Inter--info1-img">
+                <div><img src="/img/Intership/IMG_2160.webp" alt=""></div>
+            </div>
+        </section>
+
+        <section class="Inter--info2">
+            <div class="Inter--info2-img">
+                <img src="/img/Intership/IMG_2121.webp" alt="">
+            </div>
+            <div class="Inter--info2-text">
+                <h2>Get Involved</h2>
+                <p>At Fundacion Las Margaritas, we believe that change is made possible through collective effort. Whether you're an individual, a business, or an organization, there are numerous ways you can contribute to our mission and make a difference in the lives of those we serve.</p>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="Opportunities">
+                <h2>Volunteer Opportunities </h2>
+                <br>
+                <br>
+                <P>Join us as a volunteer and become an integral part of our team. Whether you have a few hours to spare each week or want to contribute your skills on a project basis, we welcome your support. Volunteer opportunities range from hands-on involvement in our programs to administrative assistance and event coordination.</P>
+                <div class="Opportunities--buttom">
+                    <a href="/contact.html" >Contact <i style="margin-left: 0.5rem;" class="fa-solid fa-circle-chevron-down"></i></a>
+                  </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer--con">
+
+    </footer>
+
+    <script src="/js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
