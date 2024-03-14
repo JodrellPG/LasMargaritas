@@ -1195,6 +1195,7 @@ input::placeholder, textarea::placeholder {
 .reading--club-pagecon-text p, .university--scholarships2 p{
     font-size: 1.5rem;
 }
+/*css de programa de stem*/
 .STEM--demostration{
     padding: 2rem 10rem;
     display: grid;
@@ -1224,8 +1225,68 @@ input::placeholder, textarea::placeholder {
     grid-template-columns: 38% 58%;
     align-items: center;
     gap: 4rem;
-
 }
+/*css de pasantias(Intership)*/
+.Inter--demostration{
+    padding: 2rem 10rem;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 1rem;
+}
+.Inter--info1, .Inter--info2{
+    padding: 2rem 10rem;
+    font-size: 1.5rem;
+}
+.Inter--info1-text h2, .Inter--info2-text h2{
+    font-size: 2.5rem;
+    color: var(--KellyGreen);
+    padding: 2rem 0;
+}
+.Inter--info1-text p, .Inter--info2-text p{
+    font-size: 1.5rem;
+}
+.Inter--info1{
+    display: grid;
+    grid-template-columns: 58% 38%;
+    align-items: center;
+    gap: 4rem;
+}
+.Inter--info2{
+    display: grid;
+    grid-template-columns: 38% 58%;
+    align-items: center;
+    gap: 4rem;
+}
+.Opportunities{
+text-align: center;
+padding: 5rem 10rem;
+box-sizing: 3rem;
+background-color: #50A120;
+color: white;
+}
+.Opportunities h2{
+    font-size: 4rem;
+}
+.Opportunities p{
+    font-size: 1.5rem;
+}
+.Opportunities--buttom{
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.Opportunities--buttom a{
+    padding: 1rem 4rem;
+    transition: 300ms ease;
+    color: white;
+    border: 0.2rem solid white;
+}
+.Opportunities--buttom a:hover{
+    color: #50A120;
+    background-color: white;
+}
+
 /*css de volunteers*/
 
 .volunteers--tittle{
@@ -1613,6 +1674,20 @@ input::placeholder, textarea::placeholder {
     .STEM--info2-img{
         order: 2;
     }
+    .Inter--demostration{
+        padding: 2rem 5rem;
+        grid-template-columns: 32% 32% 32%;
+    }
+
+    .Inter--info1{
+        grid-template-columns: 100%;
+    }
+    .Inter--info2{
+        grid-template-columns: 100%;
+    }
+    .Inter--info2-img{
+        order: 2;
+    }
     .voluntario1--club-con, .voluntario2--club-con{
         grid-template-columns: 100%;
         gap: 4rem;
@@ -1805,6 +1880,9 @@ input::placeholder, textarea::placeholder {
         padding: 2rem 5rem;
     }
     .STEM--info1, .STEM--info2{
+        padding: 2rem 5rem;
+    }
+    .Inter--info1, .Inter--info2{
         padding: 2rem 5rem;
     }
     .voluntario1--club, .voluntario2--club{
