@@ -1369,6 +1369,62 @@ color: white;
     background-color: var(--ChefchaousenBlue);
     border: 0.2rem solid var(--ChefchaousenBlue);
 }
+.summer--camp--con{
+    padding: 0 10rem;
+    background-color: var(--ChefchaousenBlue);
+    color: var(--White);
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+.summer--camp--con img{
+    border: 0.2rem dashed white;
+    padding: 1rem;
+}
+.summer--camp--imgs{
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2rem;
+    align-items: center;
+}
+.summer--camp--imgs img{
+    border: 0.2rem dashed var(--ChefchaousenBlue);
+    padding: 1rem;
+    transition: 800ms ease;
+}
+.summer--camp--imgs img:hover{
+    box-shadow: rgb(63, 142, 252, 0.4) -5px 5px, rgba(63, 142, 252, 0.3) -10px 10px, rgba(63, 142, 252, 0.2) -15px 15px, rgba(63, 142, 252, 0.1) -20px 20px, rgba(63, 142, 252, 0.05) -25px 25px;
+} 
+.summer--camp--donate{
+    margin: 3rem 10rem;
+    text-align: center;
+    border-top: 0.2rem solid var(--ChefchaousenBlue);
+    border-bottom: 0.2rem solid var(--ChefchaousenBlue);
+}
+.summer--camp--donate h2{
+    margin-top: 4rem;
+    color: var(--ChefchaousenBlue);
+    font-size: 2.5rem;
+}
+.summer--camp--donate p, .summer--camp--donate a{
+    font-size: 1.5rem;
+}
+.summer--camp--donate-btn{
+    margin: 2rem 0 4rem 0 ;
+}
+.summer--camp--donate-btn a{
+    padding: 1rem 4rem;
+    color: var(--ChefchaousenBlue);
+    font-weight: bold;
+    border: 0.2rem solid var(--ChefchaousenBlue);
+    transition: 300ms ease;
+}
+.summer--camp--donate-btn a:hover{
+    color: var(--White);
+    background-color: var(--ChefchaousenBlue);
+}
 /* RESPONSIVE */
 @media screen and (max-width: 1140px) {
     .navegador--contenedor{
@@ -1699,6 +1755,30 @@ color: white;
     .voluntario2--club-img{
         order: 2;
     }   
+
+    .summer--camp--con{
+        padding: 0 5rem;
+        gap: 2rem;
+        grid-template-columns: 59% 39%;
+    }
+
+    .summer--camp--imgs{
+        padding: 5rem;
+    }
+    .summer--camp--imgs img{
+        border: 0.2rem dashed var(--ChefchaousenBlue);
+        padding: 1rem;
+        transition: 800ms ease;
+    }
+    .summer--camp--imgs img:hover{
+        box-shadow: rgb(63, 142, 252, 0.4) -5px 5px, rgba(63, 142, 252, 0.3) -10px 10px, rgba(63, 142, 252, 0.2) -15px 15px, rgba(63, 142, 252, 0.1) -20px 20px, rgba(63, 142, 252, 0.05) -25px 25px;
+    } 
+    .summer--camp--donate{
+        margin: 3rem 5rem;
+        text-align: center;
+        border-top: 0.2rem solid var(--ChefchaousenBlue);
+        border-bottom: 0.2rem solid var(--ChefchaousenBlue);
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1895,6 +1975,27 @@ color: white;
     .volunteers--tittle{
         padding: 4rem 1rem;
         font-size: 3rem;
+    }
+    .summer--camp--con{
+        padding: 0 5rem;
+        grid-template-columns: 100%;
+        gap: 3rem;
+    }
+    .summer--camp--con img{
+        padding: 0.5rem;
+    }
+    .summer--camp--imgs{
+        padding: 2rem 5rem;
+        grid-template-columns: 100%;
+    }
+    .summer--camp--imgs img{
+        padding: 0.5rem;
+    }
+    .summer--camp--donate{
+        margin: 3rem 5rem;
+    }
+    .summer--camp--donate h2{
+        font-size: 2rem;
     }
 }
 /*#################*/
