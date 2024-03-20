@@ -1076,54 +1076,38 @@ input::placeholder, textarea::placeholder {
 
 
 /* AQUI VA CODIGO DEL FOOTER */
-
-.footer--con{
-    margin-top: 2rem;
-    background-color: var(--MarianBlue);
-    padding: 5rem;
+/* .footer--con{
+    background-color: rgb(0, 0, 0);
+    padding: 5rem 4rem;
+}
+.footer--icono{
+    width: 30rem;
 }
 .footer--up{
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    padding-bottom: 4rem;
+    border-bottom: 0.2rem solid var(--Black);
 }
-.footer--up ul li a{
-    color: rgba(255, 255, 255, 0.795);
+.footer--enlaces ul{
+    display: flex;
+    gap: 2rem;
     font-size: 1.4rem;
 }
-.footer--up ul li{
-    margin-top: 1rem;
+.footer--redes{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
 }
 .footer--down{
-    color: rgba(255, 255, 255, 0.795);
-    font-size: 1.4rem;
+    padding-top: 4rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 4rem 0;
-    padding: 4rem 0;
-    border-top: 0.1rem rgba(255, 255, 255, 0.795) solid;
-    border-bottom: 0.1rem rgba(255, 255, 255, 0.795) solid;
 }
-.footer--down-icons ul{
-    display: flex;
-    flex-direction: row;
-    color: rgba(255, 255, 255, 0.795);
-    font-size: 2rem;
-    gap: 2rem;
-}
-.footer--down-icons ul a{
-    color: rgba(255, 255, 255, 0.795);
-}
-.footer--credits, .footer--copyrigth{
-    font-size: 1.4rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.795);
-}
-.footer--credits a{
-    color: rgba(255, 255, 255, 0.795);
-    font-weight: bold;
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.795);;
-}
+.footer--copy{
+    font-size: 1.2rem;
+} */
 
 .clubs-textup, .clubs-textup2{
     text-align: center;
@@ -1243,31 +1227,36 @@ input::placeholder, textarea::placeholder {
     gap: 4rem;
 }
 /*css de pasantias(Intership)*/
-.Inter--demostration{
+.Inter--demostration,.PUEDO--demostration, .Borrow--demostration {
     padding: 2rem 10rem;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     gap: 1rem;
 }
-.Inter--info1, .Inter--info2{
+.Inter--info1, .Inter--info2, .PUEDO--info1, .PUEDO--info2, .Borrow--info1, .Borrow--info2{
     padding: 2rem 10rem;
     font-size: 1.5rem;
 }
-.Inter--info1-text h2, .Inter--info2-text h2{
+.Inter--info1-text h2, .Inter--info2-text h2, .PUEDO--info1-text h2, .PUEDO--info2-text h2,
+.Borrow--info1-text h2, .Borrow--info2-text h2{
     font-size: 2.5rem;
     color: var(--KellyGreen);
     padding: 2rem 0;
 }
-.Inter--info1-text p, .Inter--info2-text p{
+.PUEDO--info1-text h2, .PUEDO--info2-text h2{
+    color: var(--ChefchaousenBlue);
+}
+.Inter--info1-text p, .Inter--info2-text p, .PUEDO--info1-text p, .PUEDO--info2-text p,
+.Borrow--info1-text p,.Borrow--info2-text p{
     font-size: 1.5rem;
 }
-.Inter--info1{
+.Inter--info1, .PUEDO--info1,.Borrow--info1{
     display: grid;
     grid-template-columns: 58% 38%;
     align-items: center;
     gap: 4rem;
 }
-.Inter--info2{
+.Inter--info2, .PUEDO--info2,.Borrow--info2{
     display: grid;
     grid-template-columns: 38% 58%;
     align-items: center;
@@ -1302,7 +1291,6 @@ color: white;
     color: #50A120;
     background-color: white;
 }
-
 /*css de volunteers*/
 
 .volunteers--tittle{
@@ -1384,67 +1372,6 @@ color: white;
 .voluntario2--buttom a:hover{
     background-color: var(--ChefchaousenBlue);
     border: 0.2rem solid var(--ChefchaousenBlue);
-}
-.summer--camp--con, .summer--camp--con2{
-    padding: 0 10rem;
-    background-color: var(--ChefchaousenBlue);
-    color: var(--White);
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: 58% 38%;
-    gap: 4rem;
-    align-items: center;
-}
-.summer--camp--con2{
-    grid-template-columns: 38% 58%;
-}
-.summer--camp--con img, .summer--camp--con2 img{
-    border: 0.2rem dashed white;
-    padding: 1rem;
-}
-
-.summer--camp--imgs{
-    padding: 5rem 10rem;
-    display: grid;
-    grid-template-columns: 32% 32% 32%;
-    gap: 2rem;
-    align-items: center;
-}
-.summer--camp--imgs img{
-    border: 0.2rem dashed var(--ChefchaousenBlue);
-    padding: 1rem;
-    transition: 800ms ease;
-}
-.summer--camp--imgs img:hover{
-    box-shadow: rgb(63, 142, 252, 0.4) -5px 5px, rgba(63, 142, 252, 0.3) -10px 10px, rgba(63, 142, 252, 0.2) -15px 15px, rgba(63, 142, 252, 0.1) -20px 20px, rgba(63, 142, 252, 0.05) -25px 25px;
-} 
-.summer--camp--donate{
-    margin: 3rem 10rem;
-    text-align: center;
-    border-top: 0.2rem solid var(--ChefchaousenBlue);
-    border-bottom: 0.2rem solid var(--ChefchaousenBlue);
-}
-.summer--camp--donate h2{
-    margin-top: 4rem;
-    color: var(--ChefchaousenBlue);
-    font-size: 2.5rem;
-}
-.summer--camp--donate p, .summer--camp--donate a{
-    font-size: 1.5rem;
-}
-.summer--camp--donate-btn{
-    margin: 2rem 0 4rem 0 ;
-}
-.summer--camp--donate-btn a{
-    padding: 1rem 4rem;
-    color: var(--ChefchaousenBlue);
-    font-weight: bold;
-    border: 0.2rem solid var(--ChefchaousenBlue);
-    transition: 300ms ease;
-}
-.summer--camp--donate-btn a:hover{
-    color: var(--White);
-    background-color: var(--ChefchaousenBlue);
 }
 /* RESPONSIVE */
 @media screen and (max-width: 1140px) {
@@ -1751,18 +1678,17 @@ color: white;
     .STEM--info2-img{
         order: 2;
     }
-    .Inter--demostration{
-        padding: 2rem 5rem;
-        grid-template-columns: 32% 32% 32%;
+    .Inter--demostration, .Borrow--demostration, .PUEDO--demostration{
+        display: none;
     }
 
-    .Inter--info1{
+    .Inter--info1, .Borrow--info1, .PUEDO--info1{
         grid-template-columns: 100%;
     }
-    .Inter--info2{
+    .Inter--info2, .Borrow--info2, .PUEDO--info2{
         grid-template-columns: 100%;
     }
-    .Inter--info2-img{
+    .Inter--info2-img, .Borrow--info2-img, .PUEDO--info2-img{
         order: 2;
     }
     .voluntario1--club-con, .voluntario2--club-con{
@@ -1776,30 +1702,6 @@ color: white;
     .voluntario2--club-img{
         order: 2;
     }   
-
-    .summer--camp--con, .summer--camp--con2{
-        padding: 0 5rem;
-        gap: 2rem;
-        grid-template-columns: 59% 39%;
-    }
-
-    .summer--camp--imgs{
-        padding: 5rem;
-    }
-    .summer--camp--imgs img{
-        border: 0.2rem dashed var(--ChefchaousenBlue);
-        padding: 1rem;
-        transition: 800ms ease;
-    }
-    .summer--camp--imgs img:hover{
-        box-shadow: rgb(63, 142, 252, 0.4) -5px 5px, rgba(63, 142, 252, 0.3) -10px 10px, rgba(63, 142, 252, 0.2) -15px 15px, rgba(63, 142, 252, 0.1) -20px 20px, rgba(63, 142, 252, 0.05) -25px 25px;
-    } 
-    .summer--camp--donate{
-        margin: 3rem 5rem;
-        text-align: center;
-        border-top: 0.2rem solid var(--ChefchaousenBlue);
-        border-bottom: 0.2rem solid var(--ChefchaousenBlue);
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1996,74 +1898,6 @@ color: white;
     .volunteers--tittle{
         padding: 4rem 1rem;
         font-size: 3rem;
-    }
-    .summer--camp--con, .summer--camp--con2{
-        padding: 0 5rem;
-        grid-template-columns: 100%;
-        gap: 3rem;
-    }
-    .summer--camp--con2{
-        padding-top: 4rem;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .summer--camp--con img, .summer--camp--con2 img{
-        padding: 0.5rem;
-    }
-    .summer--camp--con2-img{
-        position: 2;
-    }
-    .summer--camp--imgs{
-        padding: 2rem 5rem;
-        grid-template-columns: 100%;
-    }
-    .summer--camp--imgs img{
-        padding: 0.5rem;
-    }
-    .summer--camp--donate{
-        margin: 3rem 5rem;
-    }
-    .summer--camp--donate h2{
-        font-size: 2rem;
-    }
-
-    /* FOOTER STYLE */
-        
-    .footer--con{
-        padding: 5rem 3rem;
-    }
-    .footer--up{
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer--up ul{
-        margin: 1rem 0;
-    }
-
-    .footer--down{
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .footer--down-icons ul{
-        display: flex;
-        flex-direction: row;
-        color: rgba(255, 255, 255, 0.795);
-        font-size: 2rem;
-        gap: 2rem;
-    }
-    .footer--down-icons ul a{
-        color: rgba(255, 255, 255, 0.795);
-    }
-    .footer--credits, .footer--copyrigth{
-        font-size: 1.4rem;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.795);
-    }
-    .footer--credits a{
-        color: rgba(255, 255, 255, 0.795);
-        font-weight: bold;
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.795);;
     }
 }
 /*#################*/
