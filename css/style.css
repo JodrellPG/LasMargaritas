@@ -1243,31 +1243,36 @@ input::placeholder, textarea::placeholder {
     gap: 4rem;
 }
 /*css de pasantias(Intership)*/
-.Inter--demostration{
+.Inter--demostration,.PUEDO--demostration, .Borrow--demostration {
     padding: 2rem 10rem;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     gap: 1rem;
 }
-.Inter--info1, .Inter--info2{
+.Inter--info1, .Inter--info2, .PUEDO--info1, .PUEDO--info2, .Borrow--info1, .Borrow--info2{
     padding: 2rem 10rem;
     font-size: 1.5rem;
 }
-.Inter--info1-text h2, .Inter--info2-text h2{
+.Inter--info1-text h2, .Inter--info2-text h2, .PUEDO--info1-text h2, .PUEDO--info2-text h2,
+.Borrow--info1-text h2, .Borrow--info2-text h2{
     font-size: 2.5rem;
     color: var(--KellyGreen);
     padding: 2rem 0;
 }
-.Inter--info1-text p, .Inter--info2-text p{
+.PUEDO--info1-text h2, .PUEDO--info2-text h2{
+    color: var(--ChefchaousenBlue);
+}
+.Inter--info1-text p, .Inter--info2-text p, .PUEDO--info1-text p, .PUEDO--info2-text p,
+.Borrow--info1-text p,.Borrow--info2-text p{
     font-size: 1.5rem;
 }
-.Inter--info1{
+.Inter--info1, .PUEDO--info1,.Borrow--info1{
     display: grid;
     grid-template-columns: 58% 38%;
     align-items: center;
     gap: 4rem;
 }
-.Inter--info2{
+.Inter--info2, .PUEDO--info2,.Borrow--info2{
     display: grid;
     grid-template-columns: 38% 58%;
     align-items: center;
@@ -1751,18 +1756,16 @@ color: white;
     .STEM--info2-img{
         order: 2;
     }
-    .Inter--demostration{
-        padding: 2rem 5rem;
-        grid-template-columns: 32% 32% 32%;
+    .Inter--demostration, .Borrow--demostration, .PUEDO--demostration{
+        display: none;
     }
-
-    .Inter--info1{
+    .Inter--info1, .Borrow--info1, .PUEDO--info1{
         grid-template-columns: 100%;
     }
-    .Inter--info2{
+    .Inter--info2, .Borrow--info2, .PUEDO--info2{
         grid-template-columns: 100%;
     }
-    .Inter--info2-img{
+    .Inter--info2-img, .Borrow--info2-img, .PUEDO--info2-img{
         order: 2;
     }
     .voluntario1--club-con, .voluntario2--club-con{
@@ -1983,7 +1986,7 @@ color: white;
     .STEM--info1, .STEM--info2{
         padding: 2rem 5rem;
     }
-    .Inter--info1, .Inter--info2{
+    .Inter--info1, .Inter--info2, .PUEDO--info1, .PUEDO--info2, .Borrow--info1, .Borrow--info2{
         padding: 2rem 5rem;
     }
     .voluntario1--club, .voluntario2--club{
