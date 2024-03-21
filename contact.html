@@ -61,7 +61,7 @@
                         <a href="community-operations.html">Community outreach</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="">Blog</a>
+                        <a href="https://campamentolasmargaritas.blogspot.com/">Blog</a>
                     </li>
                     <li class="navegador--boton">
                         <a href="#">Contact</a>
@@ -136,41 +136,40 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d473.1724915984264!2d-70.09833140828385!3d18.42105090765273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea55f007e3e773d%3A0x18cc38f0586b4d7a!2sFundacion%20Las%20Margaritas!5e0!3m2!1ses!2sdo!4v1708137734388!5m2!1ses!2sdo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-
     <footer class="footer--con">
         <section class="footer--up">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
             </ul>
             <ul>
-                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
             </ul>
             <ul>
-                <li><a href="volunteers.html">Volunteers</a></li>
+                <li><a href="/volunteers.html">Volunteers</a></li>
             </ul>
             <ul>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
             </ul>
             <ul>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="programs/readingclub.html">Reading Club</a></li>
-                <li><a href="programs/universityscholarship.html">University Scholarships</a></li>
-                <li><a href="programs/STEM.html">STEM</a></li>
-                <li><a href="programs/summercamp.html">Summer Camp</a></li>
-                <li><a href="programs/Internship.html">Internship Program</a></li>
-                <li><a href="programs/">PUEDO</a></li>
-                <li><a href="programs/">Read to Succeed</a></li>
-                <li><a href="programs/">Literacy</a></li>
-                <li><a href="programs/">The Chess Club</a></li>
+                <li><a href="/programs.html">Programs</a></li>
+                <li><a href="/programs/readingclub.html">Reading Club</a></li>
+                <li><a href="/programs/universityscholarship.html">University Scholarships</a></li>
+                <li><a href="/programs/STEM.html">STEM</a></li>
+                <li><a href="/programs/summercamp.html">Summer Camp</a></li>
+                <li><a href="/programs/Internship.html">Internship Program</a></li>
+                <li><a href="/programs/puedo.html">PUEDO</a></li>
+                <li><a href="/programs/EmpoweringMinds.html">Read to Succeed</a></li>
+                <li><a href="/programs/">Literacy</a></li>
+                <li><a href="/programs/">The Chess Club</a></li>
             </ul>
             <ul>
-                <li><a href="community-operations.html">Community outreach</a></li>
+                <li><a href="/community-operations.html">Community outreach</a></li>
             </ul>
             <ul>
-                <li><a href="">Blog</a></li>
+                <li><a href="https://campamentolasmargaritas.blogspot.com/">Blog</a></li>
             </ul>
             <ul>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
             <ul>
                 <li><a href="">Donate Us</a></li>
@@ -201,6 +200,34 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
     </script>
-</body>    
-</html> 
+</body>
+</html>
