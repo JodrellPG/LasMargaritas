@@ -949,6 +949,7 @@ input::placeholder, textarea::placeholder {
     color: var(--ChefchaousenBlue);
 }
 .university--scholarships-universities-img{
+    margin: 4rem 0;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     align-items: center;
@@ -1803,6 +1804,14 @@ color: white;
         border-top: 0.2rem solid var(--ChefchaousenBlue);
         border-bottom: 0.2rem solid var(--ChefchaousenBlue);
     }
+
+    .university--scholarships-universities{
+        padding: 5rem;
+    }
+    .university--scholarships-universities h2{
+        font-size: 3.5rem;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -2068,5 +2077,13 @@ color: white;
         font-weight: bold;
         border-bottom: 0.1rem solid rgba(255, 255, 255, 0.795);;
     }
+
+    .university--scholarships-universities h2{
+        font-size: 2.5rem;
+    }
+    .university--scholarships-universities-img{
+        grid-template-columns: 100%;
+    }
+
 }
 /*#################*/
