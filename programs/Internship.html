@@ -29,14 +29,16 @@
 
     <header>
         <div class="navegador--contenedor">
-            <div class="imagenes">
-                <div>
-                    <img class="logo" src="/img/Icono.jpeg" alt="">
+            <a href="/index.html">
+                <div class="imagenes">
+                    <div>
+                        <img class="logo" src="/img/Icono.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img class="letras" src="/img/letras.jpeg" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img class="letras" src="/img/letras.jpeg" alt="">
-                </div>
-            </div>
+            </a>
 
             <button class="abrir-menu" id="abrir-menu"><i class="fa-solid fa-bars"></i></button>
 
@@ -50,7 +52,7 @@
                         <a href="/about-us.html">About Us</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="/volunteers.html">Volunteers</a>
+                        <a href="/volunteers.html">Meet Our Team</a>
                     </li>
                     <li class="navegador--boton">
                         <a href="/gallery.html">Gallery</a>
@@ -131,7 +133,7 @@
                 <li><a href="/about-us.html">About Us</a></li>
             </ul>
             <ul>
-                <li><a href="/volunteers.html">Volunteers</a></li>
+                <li><a href="/volunteers.html">Meet Our Team</a></li>
             </ul>
             <ul>
                 <li><a href="/gallery.html">Gallery</a></li>
@@ -158,7 +160,7 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="">Donate Us</a></li>
+                <li><a href="">Donate</a></li>
             </ul>
         </section>
 
@@ -186,34 +188,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        }
     </script>
 </body>
 </html>

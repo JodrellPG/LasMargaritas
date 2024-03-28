@@ -30,14 +30,16 @@
 
     <header>
         <div class="navegador--contenedor">
-            <div class="imagenes">
-                <div>
-                    <img class="logo" src="/img/Icono.jpeg" alt="">
+            <a href="/index.html">
+                <div class="imagenes">
+                    <div>
+                        <img class="logo" src="/img/Icono.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img class="letras" src="/img/letras.jpeg" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img class="letras" src="/img/letras.jpeg" alt="">
-                </div>
-            </div>
+            </a>
 
             <button class="abrir-menu" id="abrir-menu"><i class="fa-solid fa-bars"></i></button>
 
@@ -51,7 +53,7 @@
                         <a href="about-us.html">About Us</a>
                     </li>
                     <li class="navegador--boton">
-                        <a href="volunteers.html">Volunteers</a>
+                        <a href="volunteers.html">Meet Our Team</a>
                     </li>
                     <li class="navegador--boton">
                         <a href="gallery.html">Gallery</a>
@@ -81,7 +83,7 @@
         <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #3F8EFC;"></path></svg></div>
         <section class="aboutus--tittle-con" id="cerrar-menu">
             <h3 class="aboutus--tittle" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">What is Las Margaritas Foundation?</h3>
-            <p class="aboutus--text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">Las Margaritas Foundation is dedicated to providing opportunities that empower young people, enabling them to become ambassadors for social and environmental change in their own community. It is an organization committed to the comprehensive development of disadvantaged youth in San Cristobal, with a focus on creating leaders who can contribute positively to their surroundings.</p>
+            <p class="aboutus--text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">Las Margaritas Foundation is dedicated to providing opportunities that empower young people, enabling them to become ambassadors for social and environmental change in their own community. It is an organization committed to the comprehensive development of marginalized youth in San Cristobal, with a focus on creating leaders who can contribute positively to their surroundings.</p>
         </section>
         <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #3F8EFC;"></path></svg></div>
 
@@ -89,7 +91,7 @@
 
             <div class="ourmission--text" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">
                 <h3>Mission</h3>
-                <p>Fundación Las Margaritas was formed in 2010.  We are a nonprofit humanitarian organization. whose mission is to serve the needs of the community of San Cristobal, in the Dominican Republic.  We are dedicated to helping deprived children have the opportunity to become leaders who bring positive change to their community. </p>
+                <p>Fundación Las Margaritas was formed in 2010.  We are a nonprofit humanitarian organization. whose mission is to serve the needs of the community of San Cristobal, in the Dominican Republic.  We are dedicated to helping marginalized children have the opportunity to become leaders who bring positive change to their community. </p>
             </div>
 
             <div class="ourmission--imgs" data-aos="fade" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">
@@ -113,7 +115,7 @@
 
             <div class="ourstory--text" data-aos="fade" data-aos-delay="100" data-aos-duration="1400" data-aos-once="true">
                 <h3>Our Story</h3>
-                <p>The idea was born from our desire to make an impact on the lives of impoverished young people in the Dominican Republic.  Growing up in San Cristobal we have seen the beauty of the people and the country, but have also seen great despair and poverty. For many years we brought items with us to donate to the community whenever we visited our family.</p>
+                <p>The idea was born from our desire to make an impact on the lives of marginalized young people in the Dominican Republic.  Growing up in San Cristobal we have seen the beauty of the people and the country, but have also seen great despair and poverty. For many years we brought items with us to donate to the community whenever we visited our family.</p>
                 <br>
                 <p>However, we always felt that was not enough.  We realized that to make a greater impact and to fully bring about meaningful change, we needed to go beyond providing aid; we had to find a way to get the youth of San Cristobal invested in their community.  We understood that in order to do that, we had to provide them with opportunities to become empowered, to be ambassadors of social and environmental changes in their own community.  That was how Fundación Las Margaritas was born.</p>
             </div>
@@ -187,7 +189,7 @@
                     <li><a href="/about-us.html">About Us</a></li>
                 </ul>
                 <ul>
-                    <li><a href="/volunteers.html">Volunteers</a></li>
+                    <li><a href="/volunteers.html">Meet Our Team</a></li>
                 </ul>
                 <ul>
                     <li><a href="/gallery.html">Gallery</a></li>
@@ -214,7 +216,7 @@
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">Donate Us</a></li>
+                    <li><a href="">Donate</a></li>
                 </ul>
             </section>
     
@@ -242,34 +244,6 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
-            let slideIndex = 1;
-            showSlides(slideIndex);
-    
-            // Next/previous controls
-            function plusSlides(n) {
-            showSlides(slideIndex += n);
-            }
-    
-            // Thumbnail image controls
-            function currentSlide(n) {
-            showSlides(slideIndex = n);
-            }
-    
-            function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
         </script>
     </body>
     </html>

@@ -320,10 +320,6 @@ p{
     text-align: center;
     margin-bottom: 5rem;
 }
-.CardsContainer--con-encabezado h5{
-    font-size: 1.5rem;
-    color: var(--KellyGreen);
-}
 .CardsContainer--con-encabezado h3{
     font-size: 4rem;
 }
@@ -949,9 +945,8 @@ input::placeholder, textarea::placeholder {
     color: var(--ChefchaousenBlue);
 }
 .university--scholarships-universities-img{
-    margin: 4rem 0;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 /* LIDE CSS */
@@ -2082,7 +2077,9 @@ color: white;
         font-size: 2.5rem;
     }
     .university--scholarships-universities-img{
-        grid-template-columns: 100%;
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 
 }
