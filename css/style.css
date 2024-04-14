@@ -951,23 +951,22 @@ input::placeholder, textarea::placeholder {
 }
 /* LIDE CSS */
 /* Slideshow container */
-.slideshow-container {
+.slideshow-container, .summercamp-slideshow-container1, .summercamp-slideshow-container2 {
     position: relative;
     margin: auto;
 }
-
 /* Hide the images by default */
-.mySlides {
+.mySlides, .my2012, .my2015, .my2016, .my2017, .my2018, .my2019{
     display: none;
 }
-.mySlides img{
+.mySlides img, .my2012 img, .my2015 img, .my2016 img, .my2017 img, .my2018, .my2019{
     object-fit:contain;
     width: 100%;
 }
 
 /* Next & previous buttons */
 
-.prev, .next {
+.prev, .next , .prev2012, .next2012{
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -981,11 +980,11 @@ input::placeholder, textarea::placeholder {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next, .next2012 {
     right: 0;
     border-radius: 4rem 0 0 4rem;
 }
-.prev {
+.prev, .prev2012 {
     left: 0;
     border-radius: 0 4rem 4rem 0;
 }
