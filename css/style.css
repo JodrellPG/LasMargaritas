@@ -1238,7 +1238,7 @@ input::placeholder, textarea::placeholder {
     gap: 4rem;
 }
 /*css de pasantias(Intership)*/
-.Inter--demostration,.PUEDO--demostration, .Borrow--demostration {
+.Inter--demostration, .Borrow--demostration {
     padding: 2rem 10rem;
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -1751,7 +1751,7 @@ color: white;
     .STEM--info2-img{
         order: 2;
     }
-    .Inter--demostration, .Borrow--demostration, .PUEDO--demostration{
+    .Inter--demostration, .Borrow--demostration{
         display: none;
     }
     .Inter--info1, .Borrow--info1, .PUEDO--info1{
