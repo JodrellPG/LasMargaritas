@@ -80,26 +80,55 @@
 
     <main id="main">
         <div class="clubs-textup2" id="cerrar-menu">
-            <h1>¡Welcome to the <span>PUEDO Program!</span></h1>
+            <h1>¡Welcome to <span>Programa Unificado de Educación y Desarrollo para Oportunidades - PUEDO Program!</span></h1>
             <br>
             <p>Programa Unificado de Educación y Desarrollo para Oportunidades. Join us in transforming lives and opening doors for tomorrow through education and development.</p>
         </div>
     
         <section class="PUEDO--info1">
             <div class="PUEDO--info1-text">
-                <h2>Explore Your Potential  </h2>
-                <p>We believe that every student deserves the opportunity to discover and develop their potential. At Las Margaritas Foundation, we are dedicated to providing underserved students with a comprehensive education, including reading, reading comprehension, and extracurricular activities such as STEAM, chess, and much more. </P>
+                <h2>Explore Your Potential and Academic Support</h2>
+                <p>We believe that every student deserves the opportunity to discover and develop their potential. At Las Margaritas Foundation, we are dedicated to providing underserved students with a comprehensive education, including reading, reading comprehension, and extracurricular activities such as STEAM, ESL (English as a Second Language), chess, and much more. </P>
                 <br>
                 <p>Based on our commitment to nurturing the academic growth of underserved students, we have launched the PUEDO program. This program offers tutoring and academic support to participants from underserved communities, guiding them toward admission to prestigious institutions like Instituto Politécnico Loyola (IPL). Discover your potential and pursue your dreams with PUEDO.</p>
             </div>
-            <div class="PUEDO--info1-img">
-                <div><img src="/img/Viaje al IPL.jpg" alt=""></div>
+            <div class="slideshow-container" data-aos="fade" data-aos-delay="100" data-aos-duration="1400">
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="/img/PUEDO5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="/img/PUEDO.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="/img/PUEDO2.jpeg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="/img/PUEDO3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="/img/PUEDO4.jpg" style="width:100%">
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left" style="color: #fff; font-size: 4rem;"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right" style="color: #fff; font-size: 4rem;"></i></a>
             </div>
         </section>
 
         <section class="PUEDO--info2">
-            <div class="PUEDO--info2-img">
-                <img src="/img/PUEDO/IMG_2139.jpg" alt="">
+            <div class="PUEDO--info1-img">
+                <div><img src="/img/Viaje al IPL.jpg" alt=""></div>
             </div>
             <div class="PUEDO--info2-text">
                 <h2>Changing Lives and Opening Doors for Tomorrow</h2>
@@ -111,17 +140,15 @@
 
         <section class="PUEDO--info1">
             <div class="PUEDO--info1-text">
-                <h2>Academic Support and Scholarships</h2>
-                <p>We believe that every student deserves the opportunity to discover and develop their potential. At Las Margaritas Foundation, we are dedicated to providing underserved students with a comprehensive education, including reading, reading comprehension, and extracurricular activities such as STEAM, ESL (English as a Second Language), chess, and much more. </P>
-                <br>
+                <h2>Scholarships </h2>
                 <p>Las Margaritas Foundation provides comprehensive support to students through tutoring to improve their chances of passing admission tests. Additionally, scholarships are available to assist with educational expenses. Even after admission, we continue to support students academically at the center, leveraging the resources of the foundation to ensure their success.</p>
             </div>
             <div class="PUEDO--info1-img">
                 <div><img src="/img/Tutoria.jpg" alt=""></div>
             </div>
         </section>
-
     </main>
+    
     <footer class="footer--con">
         <section class="footer--up">
             <ul>
@@ -183,9 +210,37 @@
     </footer>
 
     <script src="/js/app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>    
     <script>
         AOS.init();
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+    
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
     </script>
 </body>
 </html>

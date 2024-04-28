@@ -87,19 +87,6 @@ p{
     color: var(--White);
     background-color:var(--KellyGreen);
 }
-/* .navegador--boton a{
-    padding-bottom: 2rem;
-    border-bottom: 0.1rem solid transparent;
-    transition: 400ms ease;
-}
-.navegador--boton a:hover{
-    color: var(--KellyGreen);
-    padding-bottom: 0;
-    border-bottom: 0.1rem solid var(--KellyGreen);
-} */
-
-/* Menu Hover Effects Style 5 */
-
 .loader {
     display: flex;
     align-items: center;
@@ -814,58 +801,6 @@ input::placeholder, textarea::placeholder {
     background-color: var(--ChefchaousenBlue);
     color: var(--White);
 }
-
-/* responsive de contactos */
-/* @media screen and (max-width: 768px) {
-    #contact-us {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .fomulario {
-        flex: auto;
-      margin: 0;
-      max-width: 600px;
-    }
-
-    form {
-      padding: 50px 25px;
-      margin-bottom: 20px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      padding: 17px 15px;
-      margin-bottom: 15px;
-      width: calc(100% - 30px);
-    }
-
-    .from-txt {
-      margin-bottom: 20px;
-      flex-direction: column;
-    }
-
-    .from-txt a {
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      padding: 15px;
-    }
-
-    .map {
-      display: none;
-    }
-    .ubic{
-    color: #283629;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-     display: block;
-    }
-} */
 .programs--tittle{
     text-align: center;
     padding: 4rem 0;
@@ -948,6 +883,13 @@ input::placeholder, textarea::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.graduadas--img{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 /* LIDE CSS */
 /* Slideshow container */
@@ -1805,7 +1747,10 @@ color: white;
     .university--scholarships-universities h2{
         font-size: 3.5rem;
     }
-
+    .graduadas--img{
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -2080,6 +2025,9 @@ color: white;
         flex-direction: column;
         gap: 2rem;
     }
-
+    .graduadas--img{
+        grid-template-columns: 100%;
+        gap: 1rem;
+    }
 }
-/*#################*/
+/*#################*/  
